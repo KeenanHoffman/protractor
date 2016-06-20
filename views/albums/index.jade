@@ -1,0 +1,7 @@
+h1 Albums
+
+ul
+  each album in albums
+    li #{album.band} #{album.name} #{album.year}
+      br
+    a(href="/albums/"+album._id id=album.name)= album.name
